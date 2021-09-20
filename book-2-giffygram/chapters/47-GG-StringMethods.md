@@ -36,8 +36,8 @@ Using event bubbling, add an eventListener for the edit button. We can target th
 applicationElement.addEventListener("click", (event) => {
 	
 	if (event.target.id.startsWith("edit")){
-		console.log("post clicked", event.target.id.split("--"))
-		console.log("the id is", event.target.id.split("--")[1])
+		console.log("post clicked", event.target.id.split("__"))
+		console.log("the id is", event.target.id.split("__")[1])
 	}
 })
 
